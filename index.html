@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🙏 MINTA DOA FOR SPM 💞</title>
+    <style>
+        body {
+            /* BACKGROUND LUAR: Biru Navy Gelap */
+            background: #0B132B;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 30px 15px;
+            margin: 0;
+            overflow-x: hidden;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        /* =======================================================
+           1. ANIMASI TEKS GERAK KANAN-KIRI & FEATHER EFFECT
+           ======================================================= */
+        h1 {
+            text-align: center;
+            margin-bottom: 5px;
+            font-size: 28px;
+            font-weight: bold;
+            display: inline-block;
+            background: linear-gradient(to right, #64dfdf, #ffffff, #80ef80, #ffffff);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 2px rgba(100, 223, 223, 0.6));
+            animation: kilau_warna 6s linear infinite, alunan_kanan 5s ease-in-out infinite;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #64dfdf; 
+            text-shadow: 0 0 8px rgba(100, 223, 223, 0.5); 
+        }
+
+        .mesej-maaf {
+            color: #64dfdf;
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* =======================================================
+           TULISAN GRADIENT (PUTIH + BIRU CAIR)
+           ======================================================= */
+        .teks-gradien {
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 1.7;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+            display: block;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            background: linear-gradient(to bottom, #ffffff 30%, #48cae4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.6));
+        }
+
+        .emoji-real {
+            -webkit-text-fill-color: initial; 
+            background: none;                 
+            display: inline-block;
+        }
+
+        /* =======================================================
+           2. BORDER GAMBAR BIRU CAIR
+           ======================================================= */
+        .border-gambar {
+            position: relative;
+            width: 130px; 
+            height: 130px;
+            margin: 0 auto 20px auto;
+            padding: 3px; 
+            border-radius: 50%; 
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 15px rgba(100, 223, 223, 0.4);
+            flex-shrink: 0;
+        }
+
+        .border-gambar::before {
+            content: '';
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            background: conic-gradient(#00b4d8, #caf0f8, #90e0ef, #00b4d8);
+            animation: pusing_smooth 2s linear infinite;
+        }
+
+        .border-gambar img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%; 
+            z-index: 1;
+            background: #1C2541; 
+        }
+
+        /* =======================================================
+           3. BUTTON NEON (BIRU CAIR)
+           ======================================================= */
+        .btn-neon {
+            background: transparent;
+            color: #ffffff;
+            border: 2px solid #64dfdf;
+            padding: 10px 25px;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            display: inline-block;
+            margin: 10px auto 0 auto;
+            box-shadow: 0 0 10px rgba(100, 223, 223, 0.3);
+            outline: none;
+        }
+
+        .btn-neon:hover {
+            border-color: #48cae4;
+            transform: scale(1.05);
+            box-shadow: 0 0 15px #64dfdf, 0 0 30px #00b4d8, inset 0 0 10px rgba(100, 223, 223, 0.5);
+            text-shadow: 0 0 5px #ffffff;
+        }
+
+        /* =======================================================
+           STRUKTUR CONTAINER
+           ======================================================= */
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin: auto;
+            padding: 4px;
+            border-radius: 25px;
+            overflow: hidden; 
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(
+                #00b4d8 0deg, 
+                #caf0f8 90deg, 
+                #48cae4 180deg, 
+                #ffffff 270deg, 
+                #00b4d8 360deg
+            );
+            animation: pusing_smooth 6s linear infinite;
+        }
+
+        .container-inside {
+            position: relative;
+            background: #1C2541; 
+            width: 100%;
+            padding: 30px 20px;
+            border-radius: 21px; 
+            z-index: 1; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        /* Logik Sorok & Papar Halaman */
+        .halaman {
+            display: none;
+            width: 100%;
+            text-align: center;
+        }
+
+        .aktif {
+            display: block;
+        }
+
+        /* =======================================================
+           KEYFRAMES ANIMASI
+           ======================================================= */
+        @keyframes pusing_smooth {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes alunan_kanan {
+            0%, 100% { transform: translateX(0px); }
+            50% { transform: translateX(10px); } 
+        }
+
+        @keyframes kilau_warna {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 200% 50%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="container-inside">
+            
+            <div class="border-gambar">
+                <img id="avatar-cikgu" src="gambar1.jpg" alt="Gambar Cikgu">
+            </div>
+
+            <!-- HALAMAN 1 -->
+            <div id="page1" class="halaman aktif">
+                <h1>WELCOME GUYSS!!</h1>
+                <h2>Saya ada sedikit permintaan. Tekann taww guys!!😁</h2>
+                <p class="mesej-maaf">FOR EVERYONE!!</p>
+                <button class="btn-neon" onclick="tukarPage('page2')">➡️ TAP HERE ⬅️</button>
+            </div>
+
+            <!-- HALAMAN 2 -->
+            <div id="page2" class="halaman">
+                <h1>Firstly, I nak minta maaf to everyone yg open this web <span class="emoji-real">🙏🙏</span>.</h1>
+                <p class="teks-gradien">
+                    Assalamualaikum, kepada smua yg dh buka web ini. Dekat web ni saye nk mintak maaf sangat" kepada smua org yang saye kenal dan org yg saye sayang. Mungkin ade salah kata, perbuatan n sbgainya. <br><br>
+                    Terlebih lagi dengan rakan" terdekat saye. Aku nk mintak maaff sngat" klw aku bnyk sngtt buat dosa ngan korang, jd beban korg time buat kerja dlm group, xdgr kata dan bnyk lagi laa masalah yg aku buat ngan korang. Aku tau sngt salah aku. Even bnyk yg kta aku bkn introvert ke ape ke.. that's right, aku un xtawla aku introvert ke x <span class="emoji-real">🗿</span>. Tpi aku just social enxiety. Takut kene hina klw salah ckp, takut org xsuke aku, takut mcm" laa. Tpi lama" aku sedar korg mrh" n nasihat un bkn untuk korg je tpi untuk aku skli. Korg nk smua berjaya n sejak tu aku sbnrnya teringin gak nk ckp ngan org lain tnpa gagap even classmate sndiri. Aku dh try tpi still malu. So aku just ckp ngan org terdekat je. So skrg siyes aku mintak maaf sngtt" dgn sgla mslh yg aku buat. Klw aku ade buat slh lgi tegur terus or mrh. Aku nk ambik berkat dengan korg smua. <br><br>
+                    <span class="emoji-real">🙏😭</span>
+                </p>
+                <button class="btn-neon" onclick="tukarPage('page3')">NEXT</button>
+            </div>
+
+            <!-- HALAMAN 3 -->
+            <div id="page3" class="halaman">
+                <h1>FOR KAWAN"</h1>
+                
+                <p class="teks-gradien">
+                    Saya juga nak minta maaf kat kawan" game n sosmed. If saye ada masalah dengan korang. Salah kata, salah paham n semua yg korang xsuke dari saya.. Saya minta maaff sangat". <span class="emoji-real">🙏🙏</span>
+                </p>
+                
+                <p class="teks-gradien" style="margin-top: 10px; margin-bottom: 25px;">
+                    <span class="emoji-real">🥺👉👈</span> Saya mintak maaf sangat". Klau ade salah kata, pls maafkan saya n pls jgn hilang tiba". I'm serious minta maaf. 
+                    <span class="emoji-real">🙏</span><br><br>
+                    TENKYUU GUYSS!!<span class="emoji-real">💕💖</span>
+                </p>
+                
+                <button class="btn-neon" onclick="tukarPage('page4')">NEXT ➡️</button>
+            </div>
+
+            <!-- HALAMAN 4 -->
+            <div id="page4" class="halaman">
+                <h1>ON THIS PAGE I HAVE SOME REQUESTS</h1>
+                
+                <p class="teks-gradien">
+                    Saya nak mintaa tolong sangat". Saya nak jadi wakil untuk semua calon SPM 2026. Tolong doakan kami semua dipermudahkan segala urusan baik dunia maupun akhirat. Dipermudahkan urusan untuk menjawab last exam for batch 09 2026.
+                    <span class="emoji-real">🙏
+                    🤲</span>
+                    <br><br>
+                    Last exam: SPM - 26/10 > 17/12 
+                    <br><br> 
+                    Tenkyuu dh baca web saya ni. Saya doakan smua sentiasa dipermudahkan urusan, dipanjangkan umur dan dimurahkan rezeki didunia dan akhirat. AAMIINNN
+                    <span class="emoji-real">🤲🤲</span>
+                </p> <!-- KOD INI TELAH DITAMBAH (TAG PENUTUP P) -->
+                
+                <button class="btn-neon" onclick="tukarPage('page1')">BACK TO HOME</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function tukarPage(idHalamanBaru) {
+            // 1. Tukar halaman yang aktif
+            let semuaHalaman = document.querySelectorAll('.halaman');
+            semuaHalaman.forEach(hlm => {
+                hlm.classList.remove('aktif');
+            });
+            document.getElementById(idHalamanBaru).classList.add('aktif');
+
+            // 2. Tukar gambar dinamik mengikut halaman
+            let imejCikgu = document.getElementById('avatar-cikgu');
+            if (idHalamanBaru === 'page1') {
+                imejCikgu.src = 'gambar1.jpg';
+            } else if (idHalamanBaru === 'page2') {
+                imejCikgu.src = 'gambar2.jpg';
+            } else if (idHalamanBaru === 'page3') {
+                imejCikgu.src = 'gambar3.jpg';
+            } else if (idHalamanBaru === 'page4') {
+                imejCikgu.src = 'gambar4.jpg'; // Anda boleh sediakan gambar4.jpg jika ada
+            }
+        }
+    </script>
+
+</body>
+</html>
